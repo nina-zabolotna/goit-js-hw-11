@@ -1,0 +1,102 @@
+.gallery {
+  margin-top: 50px;
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photo-card {
+  height: 240px;
+  width: 350px;
+  border-radius: 1em;
+  box-shadow: 0 10px 20px #dbdbdb;
+  background-color: white;
+}
+
+.info {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10px;
+  padding: 0 1.5em;
+  color: #073763;
+}
+.info-item {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+
+input {
+  width: 50%;
+  appearance: none;
+  border: none;
+  outline: none;
+  border-bottom: 0.2em solid #005BBB;
+  border-radius: 0.2em 0.2em 0 0;
+  padding: 0.4em;
+  color: #0c0c0cbb;
+  border-radius: 8px;
+}
+
+input::placeholder {
+  color: #39393991;
+}
+
+button {
+  border-radius: 8px;
+  border-style: none;
+  color: #005BBB;
+  cursor: pointer;
+  height: 40px;
+  padding: 10px 16px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+
+.button {
+  display: inline-block;
+  background-color: #FFD500;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s,
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+.button::after {
+  content: "\2303";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #005BBB;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+.button:active {
+  background-color: #555;
+}
+
+.button.show {
+  opacity: 1;
+  visibility: visible;
+}
