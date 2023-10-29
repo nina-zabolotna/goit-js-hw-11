@@ -33,7 +33,6 @@ input {
   appearance: none;
   border: none;
   outline: none;
-  border-bottom: 0.2em solid #005BBB;
   border-radius: 0.2em 0.2em 0 0;
   padding: 0.4em;
   color: #0c0c0cbb;
